@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Spectral:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #f6f1e7;
+  --shell: #fffaf4;
+  --ink: #1d2430;
+  --fog: #6d7483;
+  --copper: #a86a3d;
+  --teal: #0f6e78;
+  --line: #d8cfbf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top right, rgba(15, 110, 120, 0.12), transparent 30%),
+    radial-gradient(circle at left 20%, rgba(168, 106, 61, 0.12), transparent 26%),
+    var(--paper);
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.display-face {
+  font-family: 'Spectral', Georgia, serif;
+}
+
+.shell-card {
+  background: rgba(255, 250, 244, 0.82);
+  border: 1px solid rgba(168, 106, 61, 0.16);
+  box-shadow: 0 14px 42px rgba(29, 36, 48, 0.08);
+  backdrop-filter: blur(16px);
+}
