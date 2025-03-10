@@ -1,47 +1,60 @@
-const nav = ['Context', 'Dataset', 'Models'];
-const cards = [
-  {
-    title: 'Why aqueous zinc',
-    body: 'Cheap metal anodes, safer water-based electrolytes, and still a lot of unsolved interface problems.',
-  },
-  {
-    title: 'Why water-in-salt',
-    body: 'High salt concentration suppresses water activity, but co-solvents change that balance in complicated ways.',
-  },
-  {
-    title: 'Why a site',
-    body: 'The paper is short. The site needs room for the dataset, the charts, and the decision logic.',
-  },
+import {
+  Bar,
+  BarChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts';
+
+const fakeData = [
+  { name: 'DMSO', lifespan: 2200, conductivity: 31 },
+  { name: 'DMF', lifespan: 1900, conductivity: 35 },
+  { name: 'TEP', lifespan: 2050, conductivity: 26 },
+  { name: 'EG', lifespan: 1500, conductivity: 11 },
 ];
 
 export default function App() {
   return (
     <main className="min-h-screen px-5 py-8 md:px-10">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-line/70 bg-white/80 px-5 py-3 text-sm text-fog">
-        <span className="font-semibold uppercase tracking-[0.28em] text-teal">wis zinc atlas</span>
-        <div className="hidden gap-6 md:flex">
-          {nav.map((item) => (
-            <a key={item} href="#" className="transition hover:text-ink">
-              {item}
-            </a>
-          ))}
-        </div>
-      </nav>
-      <section className="mx-auto mt-8 max-w-6xl rounded-[2rem] shell-card px-8 py-10 md:px-12 md:py-14">
-        <p className="text-xs uppercase tracking-[0.35em] text-copper">icemee 2026 working microsite</p>
-        <h1 className="display-face mt-4 max-w-4xl text-4xl font-semibold leading-tight text-ink md:text-6xl">
-          Mapping co-solvent choices for water-in-salt zinc-ion battery electrolytes
-        </h1>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-fog">
-          The visual direction is getting closer: paper-like, a little dramatic, but still readable like an academic explainer instead of a dashboard.
-        </p>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {cards.map((card) => (
-            <article key={card.title} className="rounded-[1.75rem] border border-line/70 bg-white/75 p-6">
-              <h2 className="display-face text-2xl text-ink">{card.title}</h2>
-              <p className="mt-4 text-base leading-7 text-fog">{card.body}</p>
-            </article>
-          ))}
+      <section className="mx-auto max-w-6xl rounded-[2rem] shell-card px-8 py-10 md:px-12">
+        <p className="text-xs uppercase tracking-[0.35em] text-teal">charts from placeholder values</p>
+        <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <h1 className="display-face text-4xl font-semibold leading-tight text-ink md:text-6xl">
+              Early structure for the electrolyte atlas
+            </h1>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-fog">
+              Still fake numbers, but now the page can at least hold a chart, a narrative, and a few dataset cards at the same time.
+            </p>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              <article className="rounded-3xl border border-line/70 bg-white/75 p-5">
+                <p className="text-xs uppercase tracking-[0.26em] text-fog">working rows</p>
+                <p className="display-face mt-3 text-3xl text-ink">24</p>
+              </article>
+              <article className="rounded-3xl border border-line/70 bg-white/75 p-5">
+                <p className="text-xs uppercase tracking-[0.26em] text-fog">tracked papers</p>
+                <p className="display-face mt-3 text-3xl text-ink">14</p>
+              </article>
+              <article className="rounded-3xl border border-line/70 bg-white/75 p-5">
+                <p className="text-xs uppercase tracking-[0.26em] text-fog">feature plan</p>
+                <p className="display-face mt-3 text-3xl text-ink">23</p>
+              </article>
+            </div>
+          </div>
+          <div className="rounded-[1.75rem] border border-line/70 bg-white/80 p-5">
+            <p className="text-sm font-semibold uppercase tracking-[0.26em] text-copper">fake solvent ranking</p>
+            <div className="mt-4 h-72">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={fakeData}>
+                  <XAxis dataKey="name" stroke="#6d7483" />
+                  <YAxis stroke="#6d7483" />
+                  <Tooltip />
+                  <Bar dataKey="lifespan" fill="#0f6e78" radius={[12, 12, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
         </div>
       </section>
     </main>
