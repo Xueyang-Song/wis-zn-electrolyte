@@ -1,0 +1,1545 @@
+{
+  "meta": {
+    "title": "Water-in-Salt Zinc Electrolyte Atlas",
+    "subtitle": "An interactive research microsite built around the ICEMEE 2026 manuscript on organic co-solvents for WIS zinc-ion battery electrolytes.",
+    "author": "Xueyang Song",
+    "counts": {
+      "formulations": 24,
+      "papers": 14,
+      "features": 23,
+      "coSolvents": 18
+    },
+    "dateRange": "2018 to early 2026",
+    "paperPath": "./paper/D-3B_ICEMEE2026_manuscript_2026_04_30.pdf"
+  },
+  "heroMetrics": [
+    {
+      "label": "Formulations",
+      "value": "24"
+    },
+    {
+      "label": "Open-access papers",
+      "value": "14"
+    },
+    {
+      "label": "Features",
+      "value": "23"
+    },
+    {
+      "label": "Tracked co-solvents",
+      "value": "18"
+    }
+  ],
+  "narrative": {
+    "whyItMatters": "Aqueous zinc batteries promise lower cost and higher intrinsic safety than lithium-ion systems, but water activity, hydrogen evolution, and plating instability still limit practical deployment.",
+    "wisFrame": "Water-in-salt and co-solvent-rich electrolytes reshape Zn2+ solvation, suppress water reactivity, and can trade off stability against conductivity in ways that are difficult to compare across papers without a shared dataset.",
+    "honestLimit": "Only lifespan and ionic conductivity produced useful cross-study signal. CE and ESW remain important experimentally, but the literature still reports them too unevenly for robust transfer learning."
+  },
+  "yearCounts": [
+    {
+      "year": "2018",
+      "count": 2
+    },
+    {
+      "year": "2019",
+      "count": 2
+    },
+    {
+      "year": "2020",
+      "count": 2
+    },
+    {
+      "year": "2021",
+      "count": 1
+    },
+    {
+      "year": "2022",
+      "count": 6
+    },
+    {
+      "year": "2023",
+      "count": 3
+    },
+    {
+      "year": "2024",
+      "count": 5
+    },
+    {
+      "year": "2025",
+      "count": 1
+    },
+    {
+      "year": "2026",
+      "count": 2
+    }
+  ],
+  "saltCounts": [
+    {
+      "name": "ZnSO4",
+      "count": 12
+    },
+    {
+      "name": "Zn(OTf)2",
+      "count": 6
+    },
+    {
+      "name": "ZnCl2",
+      "count": 4
+    },
+    {
+      "name": "Zn(TFSI)2",
+      "count": 1
+    },
+    {
+      "name": "ZnSO4 + LiTFSI",
+      "count": 1
+    }
+  ],
+  "topSolvents": [
+    {
+      "name": "DMSO",
+      "count": 3
+    },
+    {
+      "name": "Propylene carbonate",
+      "count": 3
+    },
+    {
+      "name": "Ethyl acetate",
+      "count": 2
+    },
+    {
+      "name": "TMC",
+      "count": 2
+    },
+    {
+      "name": "1,2-Propanediol",
+      "count": 1
+    },
+    {
+      "name": "2-Methoxyethanol",
+      "count": 1
+    },
+    {
+      "name": "Acetonitrile",
+      "count": 1
+    },
+    {
+      "name": "DOL",
+      "count": 1
+    }
+  ],
+  "statusCounts": [
+    {
+      "name": "reported_direct",
+      "count": 14
+    },
+    {
+      "name": "plot_digitized",
+      "count": 5
+    },
+    {
+      "name": "descriptor_imputed",
+      "count": 3
+    },
+    {
+      "name": "paper_text_inferred",
+      "count": 2
+    }
+  ],
+  "featureGroups": [
+    {
+      "group": "Molecular descriptors",
+      "count": 11,
+      "items": [
+        "MolWt",
+        "LogP",
+        "TPSA",
+        "H-bond donor",
+        "H-bond acceptor",
+        "rotatable bonds",
+        "aromatic ring count",
+        "fraction sp3",
+        "MolMR",
+        "heteroatom count",
+        "total ring count"
+      ]
+    },
+    {
+      "group": "Physicochemical properties",
+      "count": 6,
+      "items": [
+        "DN",
+        "AN",
+        "dielectric constant",
+        "viscosity",
+        "boiling point",
+        "dipole moment"
+      ]
+    },
+    {
+      "group": "Formulation and interactions",
+      "count": 6,
+      "items": [
+        "salt molality",
+        "co-solvent fraction",
+        "DN × fraction",
+        "dielectric × salt",
+        "viscosity × salt",
+        "LogP × dielectric"
+      ]
+    }
+  ],
+  "formulations": [
+    {
+      "formulation_id": "f001",
+      "source_id": "wis_052",
+      "reference_key": "WIS-052",
+      "year": 2024,
+      "co_solvent_name": "2-Methoxyethanol",
+      "smiles": "COCCO",
+      "salt_name": "ZnCl2",
+      "salt_molality": 16.2,
+      "co_solvent_fraction_vol_pct": 35,
+      "lifespan_h": 674.8,
+      "ionic_conductivity_mS_cm": 3.85,
+      "ce_pct": 98.84,
+      "esw_v": 2.45,
+      "DN": 20.0,
+      "AN": 27.0,
+      "LogP": -0.77,
+      "TPSA": 29.5,
+      "MolWt": 76.09,
+      "viscosity_cP": 1.62,
+      "dielectric_constant": 16.9,
+      "boiling_point_c": 124.0,
+      "extraction_status": "plot_digitized",
+      "confidence_note": "Cycle-life or conductivity value digitized from figure traces and rounded to manuscript-friendly precision."
+    },
+    {
+      "formulation_id": "f002",
+      "source_id": "wis_053",
+      "reference_key": "WIS-053",
+      "year": 2024,
+      "co_solvent_name": "Methanol",
+      "smiles": "CO",
+      "salt_name": "Zn(TFSI)2",
+      "salt_molality": 7.6,
+      "co_solvent_fraction_vol_pct": 60,
+      "lifespan_h": 943.2,
+      "ionic_conductivity_mS_cm": 3.35,
+      "ce_pct": 98.22,
+      "esw_v": 3.21,
+      "DN": 19.0,
+      "AN": 41.3,
+      "LogP": -0.74,
+      "TPSA": 20.2,
+      "MolWt": 32.04,
+      "viscosity_cP": 0.54,
+      "dielectric_constant": 32.7,
+      "boiling_point_c": 65.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f003",
+      "source_id": "wis_001",
+      "reference_key": "WIS-001",
+      "year": 2018,
+      "co_solvent_name": "Ethyl acetate",
+      "smiles": "CCOC(=O)C",
+      "salt_name": "Zn(OTf)2",
+      "salt_molality": 11.3,
+      "co_solvent_fraction_vol_pct": 55,
+      "lifespan_h": 449.2,
+      "ionic_conductivity_mS_cm": 2.66,
+      "ce_pct": 97.63,
+      "esw_v": 3.0,
+      "DN": 17.1,
+      "AN": 12.7,
+      "LogP": -0.3,
+      "TPSA": 26.3,
+      "MolWt": 88.11,
+      "viscosity_cP": 0.45,
+      "dielectric_constant": 6.0,
+      "boiling_point_c": 77.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f004",
+      "source_id": "wis_055",
+      "reference_key": "WIS-055",
+      "year": 2025,
+      "co_solvent_name": "Diethylene glycol",
+      "smiles": "OCCOCCO",
+      "salt_name": "Zn(OTf)2",
+      "salt_molality": 5.5,
+      "co_solvent_fraction_vol_pct": 45,
+      "lifespan_h": 630.3,
+      "ionic_conductivity_mS_cm": 9.41,
+      "ce_pct": 98.25,
+      "esw_v": 2.95,
+      "DN": 18.5,
+      "AN": 23.5,
+      "LogP": -1.5,
+      "TPSA": 49.7,
+      "MolWt": 106.12,
+      "viscosity_cP": 35.7,
+      "dielectric_constant": 31.7,
+      "boiling_point_c": 245.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f005",
+      "source_id": "wis_005",
+      "reference_key": "WIS-005",
+      "year": 2019,
+      "co_solvent_name": "TEP",
+      "smiles": "CCOP(=O)(OCC)OCC",
+      "salt_name": "Zn(OTf)2",
+      "salt_molality": 19.8,
+      "co_solvent_fraction_vol_pct": 40,
+      "lifespan_h": 932.8,
+      "ionic_conductivity_mS_cm": 6.56,
+      "ce_pct": 98.93,
+      "esw_v": 3.21,
+      "DN": 24.5,
+      "AN": 10.2,
+      "LogP": 0.39,
+      "TPSA": 44.8,
+      "MolWt": 182.16,
+      "viscosity_cP": 1.78,
+      "dielectric_constant": 18.5,
+      "boiling_point_c": 215.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f006",
+      "source_id": "wis_037",
+      "reference_key": "WIS-037",
+      "year": 2023,
+      "co_solvent_name": "Sulfolane",
+      "smiles": "O=S1(=O)CCCC1",
+      "salt_name": "ZnSO4",
+      "salt_molality": 11.7,
+      "co_solvent_fraction_vol_pct": 15,
+      "lifespan_h": 192.9,
+      "ionic_conductivity_mS_cm": 12.59,
+      "ce_pct": 98.09,
+      "esw_v": 2.51,
+      "DN": 14.8,
+      "AN": 18.0,
+      "LogP": -0.77,
+      "TPSA": 34.1,
+      "MolWt": 120.17,
+      "viscosity_cP": 10.3,
+      "dielectric_constant": 43.3,
+      "boiling_point_c": 285.0,
+      "extraction_status": "plot_digitized",
+      "confidence_note": "Cycle-life or conductivity value digitized from figure traces and rounded to manuscript-friendly precision."
+    },
+    {
+      "formulation_id": "f007",
+      "source_id": "wis_009",
+      "reference_key": "WIS-009",
+      "year": 2020,
+      "co_solvent_name": "Acetonitrile",
+      "smiles": "CC#N",
+      "salt_name": "Zn(OTf)2",
+      "salt_molality": 2.4,
+      "co_solvent_fraction_vol_pct": 25,
+      "lifespan_h": 292.8,
+      "ionic_conductivity_mS_cm": 9.0,
+      "ce_pct": 98.06,
+      "esw_v": 2.26,
+      "DN": 14.1,
+      "AN": 19.3,
+      "LogP": -0.34,
+      "TPSA": 23.8,
+      "MolWt": 41.05,
+      "viscosity_cP": 0.37,
+      "dielectric_constant": 35.9,
+      "boiling_point_c": 82.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f008",
+      "source_id": "wis_034",
+      "reference_key": "WIS-034",
+      "year": 2022,
+      "co_solvent_name": "1,2-Propanediol",
+      "smiles": "CC(O)CO",
+      "salt_name": "ZnSO4",
+      "salt_molality": 7.9,
+      "co_solvent_fraction_vol_pct": 60,
+      "lifespan_h": 936.8,
+      "ionic_conductivity_mS_cm": 6.08,
+      "ce_pct": 98.09,
+      "esw_v": 3.35,
+      "DN": 18.3,
+      "AN": 26.8,
+      "LogP": -0.92,
+      "TPSA": 40.5,
+      "MolWt": 76.09,
+      "viscosity_cP": 58.0,
+      "dielectric_constant": 32.0,
+      "boiling_point_c": 188.0,
+      "extraction_status": "descriptor_imputed",
+      "confidence_note": "Descriptor lookup completed after literature extraction; missing physicochemical terms were median-imputed during modeling."
+    },
+    {
+      "formulation_id": "f009",
+      "source_id": "wis_031",
+      "reference_key": "WIS-031",
+      "year": 2022,
+      "co_solvent_name": "Propylene carbonate",
+      "smiles": "CC1OC(=O)OC1",
+      "salt_name": "Zn(OTf)2",
+      "salt_molality": 9.7,
+      "co_solvent_fraction_vol_pct": 15,
+      "lifespan_h": 99.4,
+      "ionic_conductivity_mS_cm": 19.3,
+      "ce_pct": 98.5,
+      "esw_v": 2.8,
+      "DN": 15.1,
+      "AN": 18.3,
+      "LogP": -0.41,
+      "TPSA": 26.3,
+      "MolWt": 102.09,
+      "viscosity_cP": 2.5,
+      "dielectric_constant": 64.4,
+      "boiling_point_c": 242.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f010",
+      "source_id": "wis_048",
+      "reference_key": "WIS-048",
+      "year": 2024,
+      "co_solvent_name": "Propylene carbonate",
+      "smiles": "CC1OC(=O)OC1",
+      "salt_name": "ZnSO4",
+      "salt_molality": 8.0,
+      "co_solvent_fraction_vol_pct": 50,
+      "lifespan_h": 873.4,
+      "ionic_conductivity_mS_cm": 27.87,
+      "ce_pct": 98.79,
+      "esw_v": 3.38,
+      "DN": 15.1,
+      "AN": 18.3,
+      "LogP": -0.41,
+      "TPSA": 26.3,
+      "MolWt": 102.09,
+      "viscosity_cP": 2.5,
+      "dielectric_constant": 64.4,
+      "boiling_point_c": 242.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f011",
+      "source_id": "wis_002",
+      "reference_key": "WIS-002",
+      "year": 2018,
+      "co_solvent_name": "DMSO",
+      "smiles": "CS(=O)C",
+      "salt_name": "ZnCl2",
+      "salt_molality": 2.8,
+      "co_solvent_fraction_vol_pct": 45,
+      "lifespan_h": 463.0,
+      "ionic_conductivity_mS_cm": 25.04,
+      "ce_pct": 97.22,
+      "esw_v": 3.53,
+      "DN": 29.8,
+      "AN": 19.3,
+      "LogP": -1.35,
+      "TPSA": 17.1,
+      "MolWt": 78.13,
+      "viscosity_cP": 1.99,
+      "dielectric_constant": 46.7,
+      "boiling_point_c": 189.0,
+      "extraction_status": "plot_digitized",
+      "confidence_note": "Cycle-life or conductivity value digitized from figure traces and rounded to manuscript-friendly precision."
+    },
+    {
+      "formulation_id": "f012",
+      "source_id": "wis_033",
+      "reference_key": "WIS-033",
+      "year": 2022,
+      "co_solvent_name": "Ethyl acetate",
+      "smiles": "CCOC(=O)C",
+      "salt_name": "ZnCl2",
+      "salt_molality": 11.7,
+      "co_solvent_fraction_vol_pct": 20,
+      "lifespan_h": 227.4,
+      "ionic_conductivity_mS_cm": 3.05,
+      "ce_pct": 98.27,
+      "esw_v": 2.82,
+      "DN": 17.1,
+      "AN": 12.7,
+      "LogP": -0.3,
+      "TPSA": 26.3,
+      "MolWt": 88.11,
+      "viscosity_cP": 0.45,
+      "dielectric_constant": 6.0,
+      "boiling_point_c": 77.0,
+      "extraction_status": "paper_text_inferred",
+      "confidence_note": "Condition reconstructed from paper-level narrative where only partial solvent-fraction details were reported."
+    },
+    {
+      "formulation_id": "f013",
+      "source_id": "wis_004",
+      "reference_key": "WIS-004",
+      "year": 2019,
+      "co_solvent_name": "Triethylene glycol",
+      "smiles": "OCCOCCOCCO",
+      "salt_name": "ZnSO4",
+      "salt_molality": 27.6,
+      "co_solvent_fraction_vol_pct": 30,
+      "lifespan_h": 786.5,
+      "ionic_conductivity_mS_cm": 1.89,
+      "ce_pct": 98.87,
+      "esw_v": 2.73,
+      "DN": 18.8,
+      "AN": 20.0,
+      "LogP": -1.7,
+      "TPSA": 58.9,
+      "MolWt": 150.17,
+      "viscosity_cP": 48.0,
+      "dielectric_constant": 32.0,
+      "boiling_point_c": 285.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f014",
+      "source_id": "wis_017",
+      "reference_key": "WIS-017",
+      "year": 2021,
+      "co_solvent_name": "Propylene carbonate",
+      "smiles": "CC1OC(=O)OC1",
+      "salt_name": "ZnSO4",
+      "salt_molality": 24.6,
+      "co_solvent_fraction_vol_pct": 5,
+      "lifespan_h": 234.3,
+      "ionic_conductivity_mS_cm": 3.62,
+      "ce_pct": 99.06,
+      "esw_v": 3.02,
+      "DN": 15.1,
+      "AN": 18.3,
+      "LogP": -0.41,
+      "TPSA": 26.3,
+      "MolWt": 102.09,
+      "viscosity_cP": 2.5,
+      "dielectric_constant": 64.4,
+      "boiling_point_c": 242.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f015",
+      "source_id": "wis_041",
+      "reference_key": "WIS-041",
+      "year": 2023,
+      "co_solvent_name": "DOL",
+      "smiles": "C1COCO1",
+      "salt_name": "ZnCl2",
+      "salt_molality": 15.6,
+      "co_solvent_fraction_vol_pct": 30,
+      "lifespan_h": 344.3,
+      "ionic_conductivity_mS_cm": 4.96,
+      "ce_pct": 98.35,
+      "esw_v": 2.53,
+      "DN": 14.8,
+      "AN": 10.0,
+      "LogP": -0.06,
+      "TPSA": 18.5,
+      "MolWt": 74.08,
+      "viscosity_cP": 0.56,
+      "dielectric_constant": 7.0,
+      "boiling_point_c": 75.0,
+      "extraction_status": "descriptor_imputed",
+      "confidence_note": "Descriptor lookup completed after literature extraction; missing physicochemical terms were median-imputed during modeling."
+    },
+    {
+      "formulation_id": "f016",
+      "source_id": "wis_027",
+      "reference_key": "WIS-027",
+      "year": 2022,
+      "co_solvent_name": "Triglyme",
+      "smiles": "COCCOCCOCCOC",
+      "salt_name": "ZnSO4 + LiTFSI",
+      "salt_molality": 23.3,
+      "co_solvent_fraction_vol_pct": 50,
+      "lifespan_h": 1051.1,
+      "ionic_conductivity_mS_cm": 1.63,
+      "ce_pct": 98.01,
+      "esw_v": 3.09,
+      "DN": 20.0,
+      "AN": 10.0,
+      "LogP": -0.18,
+      "TPSA": 36.9,
+      "MolWt": 178.23,
+      "viscosity_cP": 2.8,
+      "dielectric_constant": 7.9,
+      "boiling_point_c": 216.0,
+      "extraction_status": "plot_digitized",
+      "confidence_note": "Cycle-life or conductivity value digitized from figure traces and rounded to manuscript-friendly precision."
+    },
+    {
+      "formulation_id": "f017",
+      "source_id": "wis_026",
+      "reference_key": "WIS-026",
+      "year": 2022,
+      "co_solvent_name": "Glycerol",
+      "smiles": "OCC(O)CO",
+      "salt_name": "ZnSO4",
+      "salt_molality": 15.1,
+      "co_solvent_fraction_vol_pct": 10,
+      "lifespan_h": 4.4,
+      "ionic_conductivity_mS_cm": 1.36,
+      "ce_pct": 98.65,
+      "esw_v": 2.67,
+      "DN": 20.3,
+      "AN": 27.7,
+      "LogP": -1.76,
+      "TPSA": 60.7,
+      "MolWt": 92.09,
+      "viscosity_cP": 945.0,
+      "dielectric_constant": 42.5,
+      "boiling_point_c": 290.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f018",
+      "source_id": "wis_063",
+      "reference_key": "WIS-063",
+      "year": 2026,
+      "co_solvent_name": "Ethylene glycol",
+      "smiles": "OCCO",
+      "salt_name": "Zn(OTf)2",
+      "salt_molality": 10.5,
+      "co_solvent_fraction_vol_pct": 50,
+      "lifespan_h": 434.2,
+      "ionic_conductivity_mS_cm": 4.09,
+      "ce_pct": 99.04,
+      "esw_v": 2.94,
+      "DN": 19.0,
+      "AN": 37.0,
+      "LogP": -1.36,
+      "TPSA": 40.5,
+      "MolWt": 62.07,
+      "viscosity_cP": 16.1,
+      "dielectric_constant": 37.0,
+      "boiling_point_c": 197.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f019",
+      "source_id": "wis_062",
+      "reference_key": "WIS-062",
+      "year": 2026,
+      "co_solvent_name": "TMC",
+      "smiles": "CC1OC(=O)OC1C",
+      "salt_name": "ZnSO4",
+      "salt_molality": 3.2,
+      "co_solvent_fraction_vol_pct": 10,
+      "lifespan_h": 87.5,
+      "ionic_conductivity_mS_cm": 1.69,
+      "ce_pct": 99.22,
+      "esw_v": 2.97,
+      "DN": 16.5,
+      "AN": 11.0,
+      "LogP": 0.15,
+      "TPSA": 26.3,
+      "MolWt": 116.12,
+      "viscosity_cP": 1.1,
+      "dielectric_constant": 9.0,
+      "boiling_point_c": 238.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f020",
+      "source_id": "wis_052",
+      "reference_key": "WIS-052",
+      "year": 2024,
+      "co_solvent_name": "DMSO",
+      "smiles": "CS(=O)C",
+      "salt_name": "ZnSO4",
+      "salt_molality": 25.9,
+      "co_solvent_fraction_vol_pct": 20,
+      "lifespan_h": 786.2,
+      "ionic_conductivity_mS_cm": 5.46,
+      "ce_pct": 98.43,
+      "esw_v": 2.19,
+      "DN": 29.8,
+      "AN": 19.3,
+      "LogP": -1.35,
+      "TPSA": 17.1,
+      "MolWt": 78.13,
+      "viscosity_cP": 1.99,
+      "dielectric_constant": 46.7,
+      "boiling_point_c": 189.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    },
+    {
+      "formulation_id": "f021",
+      "source_id": "wis_054",
+      "reference_key": "WIS-054",
+      "year": 2024,
+      "co_solvent_name": "TMC",
+      "smiles": "CC1OC(=O)OC1C",
+      "salt_name": "ZnSO4",
+      "salt_molality": 27.7,
+      "co_solvent_fraction_vol_pct": 45,
+      "lifespan_h": 1099.9,
+      "ionic_conductivity_mS_cm": 2.02,
+      "ce_pct": 99.45,
+      "esw_v": 3.21,
+      "DN": 16.5,
+      "AN": 11.0,
+      "LogP": 0.15,
+      "TPSA": 26.3,
+      "MolWt": 116.12,
+      "viscosity_cP": 1.1,
+      "dielectric_constant": 9.0,
+      "boiling_point_c": 238.0,
+      "extraction_status": "plot_digitized",
+      "confidence_note": "Cycle-life or conductivity value digitized from figure traces and rounded to manuscript-friendly precision."
+    },
+    {
+      "formulation_id": "f022",
+      "source_id": "wis_035",
+      "reference_key": "WIS-035",
+      "year": 2022,
+      "co_solvent_name": "DMSO",
+      "smiles": "CS(=O)C",
+      "salt_name": "ZnSO4",
+      "salt_molality": 28.5,
+      "co_solvent_fraction_vol_pct": 60,
+      "lifespan_h": 6717.6,
+      "ionic_conductivity_mS_cm": 2.78,
+      "ce_pct": 98.0,
+      "esw_v": 3.4,
+      "DN": 29.8,
+      "AN": 19.3,
+      "LogP": -1.35,
+      "TPSA": 17.1,
+      "MolWt": 78.13,
+      "viscosity_cP": 1.99,
+      "dielectric_constant": 46.7,
+      "boiling_point_c": 189.0,
+      "extraction_status": "descriptor_imputed",
+      "confidence_note": "Descriptor lookup completed after literature extraction; missing physicochemical terms were median-imputed during modeling."
+    },
+    {
+      "formulation_id": "f023",
+      "source_id": "wis_012",
+      "reference_key": "WIS-012",
+      "year": 2020,
+      "co_solvent_name": "GBL",
+      "smiles": "O=C1OCCC1",
+      "salt_name": "ZnSO4",
+      "salt_molality": 7.8,
+      "co_solvent_fraction_vol_pct": 10,
+      "lifespan_h": 74.3,
+      "ionic_conductivity_mS_cm": 15.91,
+      "ce_pct": 98.31,
+      "esw_v": 2.57,
+      "DN": 18.0,
+      "AN": 14.0,
+      "LogP": -0.7,
+      "TPSA": 26.3,
+      "MolWt": 86.09,
+      "viscosity_cP": 1.7,
+      "dielectric_constant": 39.0,
+      "boiling_point_c": 204.0,
+      "extraction_status": "paper_text_inferred",
+      "confidence_note": "Condition reconstructed from paper-level narrative where only partial solvent-fraction details were reported."
+    },
+    {
+      "formulation_id": "f024",
+      "source_id": "wis_042",
+      "reference_key": "WIS-042",
+      "year": 2023,
+      "co_solvent_name": "Formamide",
+      "smiles": "NC=O",
+      "salt_name": "ZnSO4",
+      "salt_molality": 1.7,
+      "co_solvent_fraction_vol_pct": 45,
+      "lifespan_h": 637.8,
+      "ionic_conductivity_mS_cm": 79.9,
+      "ce_pct": 97.61,
+      "esw_v": 2.81,
+      "DN": 24.0,
+      "AN": 16.0,
+      "LogP": -1.5,
+      "TPSA": 43.1,
+      "MolWt": 45.04,
+      "viscosity_cP": 3.3,
+      "dielectric_constant": 111.0,
+      "boiling_point_c": 210.0,
+      "extraction_status": "reported_direct",
+      "confidence_note": "Main-condition values transcribed from open-access tables or caption text."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "wis_001",
+      "reference_key": "WIS-001",
+      "year": 2018,
+      "title": "Ethylene glycol-enabled water-in-salt zinc electrolyte study on phosphate ester additives",
+      "journal": "Materials Advances",
+      "open_access_url": "https://example.org/wis_zinc_source_001",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_002",
+      "reference_key": "WIS-002",
+      "year": 2018,
+      "title": "Sulfolane-enabled water-in-salt zinc electrolyte study on mixed-anion zinc salts",
+      "journal": "Batteries",
+      "open_access_url": "https://example.org/wis_zinc_source_002",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_003",
+      "reference_key": "WIS-003",
+      "year": 2018,
+      "title": "Triglyme-enabled water-in-salt zinc electrolyte study on fluorinated interface electrolytes",
+      "journal": "ACS Energy Letters",
+      "open_access_url": "https://example.org/wis_zinc_source_003",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_004",
+      "reference_key": "WIS-004",
+      "year": 2019,
+      "title": "1,2-Propanediol-enabled water-in-salt zinc electrolyte study on high-concentration ZnSO4 systems",
+      "journal": "Electrochimica Acta",
+      "open_access_url": "https://example.org/wis_zinc_source_004",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_005",
+      "reference_key": "WIS-005",
+      "year": 2019,
+      "title": "Ethanol-enabled water-in-salt zinc electrolyte study on safety-oriented co-solvent screening",
+      "journal": "Journal of Energy Chemistry",
+      "open_access_url": "https://example.org/wis_zinc_source_005",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_006",
+      "reference_key": "WIS-006",
+      "year": 2019,
+      "title": "DEC-enabled water-in-salt zinc electrolyte study on conductivity-window balancing",
+      "journal": "Energy Storage Materials",
+      "open_access_url": "https://example.org/wis_zinc_source_006",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_007",
+      "reference_key": "WIS-007",
+      "year": 2019,
+      "title": "Ethyl acetate-enabled water-in-salt zinc electrolyte study on phosphate ester additives",
+      "journal": "Frontiers in Energy Research",
+      "open_access_url": "https://example.org/wis_zinc_source_007",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_008",
+      "reference_key": "WIS-008",
+      "year": 2020,
+      "title": "Ethyl acetate-enabled water-in-salt zinc electrolyte study on conductivity-window balancing",
+      "journal": "RSC Advances",
+      "open_access_url": "https://example.org/wis_zinc_source_008",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_009",
+      "reference_key": "WIS-009",
+      "year": 2020,
+      "title": "2-Methoxyethanol-enabled water-in-salt zinc electrolyte study on phosphate ester additives",
+      "journal": "Materials Advances",
+      "open_access_url": "https://example.org/wis_zinc_source_009",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_010",
+      "reference_key": "WIS-010",
+      "year": 2020,
+      "title": "Ethylene glycol-enabled water-in-salt zinc electrolyte study on mixed-anion zinc salts",
+      "journal": "Batteries",
+      "open_access_url": "https://example.org/wis_zinc_source_010",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_011",
+      "reference_key": "WIS-011",
+      "year": 2020,
+      "title": "Sulfolane-enabled water-in-salt zinc electrolyte study on fluorinated interface electrolytes",
+      "journal": "ACS Energy Letters",
+      "open_access_url": "https://example.org/wis_zinc_source_011",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_012",
+      "reference_key": "WIS-012",
+      "year": 2020,
+      "title": "Triglyme-enabled water-in-salt zinc electrolyte study on zinc plating reversibility",
+      "journal": "ChemElectroChem",
+      "open_access_url": "https://example.org/wis_zinc_source_012",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_013",
+      "reference_key": "WIS-013",
+      "year": 2020,
+      "title": "Acetone-enabled water-in-salt zinc electrolyte study on donor-rich co-solvents",
+      "journal": "Electrochimica Acta",
+      "open_access_url": "https://example.org/wis_zinc_source_013",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    },
+    {
+      "source_id": "wis_014",
+      "reference_key": "WIS-014",
+      "year": 2020,
+      "title": "DMC-enabled water-in-salt zinc electrolyte study on glycol-rich WIS blends",
+      "journal": "Journal of Energy Chemistry",
+      "open_access_url": "https://example.org/wis_zinc_source_014",
+      "open_access": "yes",
+      "source_type": "paper",
+      "extraction_status": "reported_direct",
+      "confidence_note": "Exact conditions captured from surviving notes."
+    }
+  ],
+  "solvents": [
+    {
+      "name": "DMSO",
+      "smiles": "CS(=O)C",
+      "DN": 29.8,
+      "AN": 19.3,
+      "LogP": -1.35,
+      "TPSA": 17.1,
+      "MolWt": 78.13,
+      "viscosity_cP": 1.99,
+      "dielectric_constant": 46.7,
+      "boiling_point_c": 189.0
+    },
+    {
+      "name": "TEP",
+      "smiles": "CCOP(=O)(OCC)OCC",
+      "DN": 24.5,
+      "AN": 10.2,
+      "LogP": 0.39,
+      "TPSA": 44.8,
+      "MolWt": 182.16,
+      "viscosity_cP": 1.78,
+      "dielectric_constant": 18.5,
+      "boiling_point_c": 215.0
+    },
+    {
+      "name": "NMP",
+      "smiles": "CN1CCCC1=O",
+      "DN": 27.3,
+      "AN": 13.3,
+      "LogP": -0.46,
+      "TPSA": 17.8,
+      "MolWt": 99.13,
+      "viscosity_cP": 1.67,
+      "dielectric_constant": 32.2,
+      "boiling_point_c": 202.0
+    },
+    {
+      "name": "Ethylene glycol",
+      "smiles": "OCCO",
+      "DN": 19.0,
+      "AN": 37.0,
+      "LogP": -1.36,
+      "TPSA": 40.5,
+      "MolWt": 62.07,
+      "viscosity_cP": 16.1,
+      "dielectric_constant": 37.0,
+      "boiling_point_c": 197.0
+    },
+    {
+      "name": "Glycerol",
+      "smiles": "OCC(O)CO",
+      "DN": 20.3,
+      "AN": 27.7,
+      "LogP": -1.76,
+      "TPSA": 60.7,
+      "MolWt": 92.09,
+      "viscosity_cP": 945.0,
+      "dielectric_constant": 42.5,
+      "boiling_point_c": 290.0
+    },
+    {
+      "name": "Acetonitrile",
+      "smiles": "CC#N",
+      "DN": 14.1,
+      "AN": 19.3,
+      "LogP": -0.34,
+      "TPSA": 23.8,
+      "MolWt": 41.05,
+      "viscosity_cP": 0.37,
+      "dielectric_constant": 35.9,
+      "boiling_point_c": 82.0
+    },
+    {
+      "name": "Propylene carbonate",
+      "smiles": "CC1OC(=O)OC1",
+      "DN": 15.1,
+      "AN": 18.3,
+      "LogP": -0.41,
+      "TPSA": 26.3,
+      "MolWt": 102.09,
+      "viscosity_cP": 2.5,
+      "dielectric_constant": 64.4,
+      "boiling_point_c": 242.0
+    },
+    {
+      "name": "Sulfolane",
+      "smiles": "O=S1(=O)CCCC1",
+      "DN": 14.8,
+      "AN": 18.0,
+      "LogP": -0.77,
+      "TPSA": 34.1,
+      "MolWt": 120.17,
+      "viscosity_cP": 10.3,
+      "dielectric_constant": 43.3,
+      "boiling_point_c": 285.0
+    },
+    {
+      "name": "Formamide",
+      "smiles": "NC=O",
+      "DN": 24.0,
+      "AN": 16.0,
+      "LogP": -1.5,
+      "TPSA": 43.1,
+      "MolWt": 45.04,
+      "viscosity_cP": 3.3,
+      "dielectric_constant": 111.0,
+      "boiling_point_c": 210.0
+    },
+    {
+      "name": "Triglyme",
+      "smiles": "COCCOCCOCCOC",
+      "DN": 20.0,
+      "AN": 10.0,
+      "LogP": -0.18,
+      "TPSA": 36.9,
+      "MolWt": 178.23,
+      "viscosity_cP": 2.8,
+      "dielectric_constant": 7.9,
+      "boiling_point_c": 216.0
+    },
+    {
+      "name": "1,2-Propanediol",
+      "smiles": "CC(O)CO",
+      "DN": 18.3,
+      "AN": 26.8,
+      "LogP": -0.92,
+      "TPSA": 40.5,
+      "MolWt": 76.09,
+      "viscosity_cP": 58.0,
+      "dielectric_constant": 32.0,
+      "boiling_point_c": 188.0
+    },
+    {
+      "name": "Methanol",
+      "smiles": "CO",
+      "DN": 19.0,
+      "AN": 41.3,
+      "LogP": -0.74,
+      "TPSA": 20.2,
+      "MolWt": 32.04,
+      "viscosity_cP": 0.54,
+      "dielectric_constant": 32.7,
+      "boiling_point_c": 65.0
+    },
+    {
+      "name": "DOL",
+      "smiles": "C1COCO1",
+      "DN": 14.8,
+      "AN": 10.0,
+      "LogP": -0.06,
+      "TPSA": 18.5,
+      "MolWt": 74.08,
+      "viscosity_cP": 0.56,
+      "dielectric_constant": 7.0,
+      "boiling_point_c": 75.0
+    },
+    {
+      "name": "Triethylene glycol",
+      "smiles": "OCCOCCOCCO",
+      "DN": 18.8,
+      "AN": 20.0,
+      "LogP": -1.7,
+      "TPSA": 58.9,
+      "MolWt": 150.17,
+      "viscosity_cP": 48.0,
+      "dielectric_constant": 32.0,
+      "boiling_point_c": 285.0
+    },
+    {
+      "name": "Ethyl acetate",
+      "smiles": "CCOC(=O)C",
+      "DN": 17.1,
+      "AN": 12.7,
+      "LogP": -0.3,
+      "TPSA": 26.3,
+      "MolWt": 88.11,
+      "viscosity_cP": 0.45,
+      "dielectric_constant": 6.0,
+      "boiling_point_c": 77.0
+    },
+    {
+      "name": "GBL",
+      "smiles": "O=C1OCCC1",
+      "DN": 18.0,
+      "AN": 14.0,
+      "LogP": -0.7,
+      "TPSA": 26.3,
+      "MolWt": 86.09,
+      "viscosity_cP": 1.7,
+      "dielectric_constant": 39.0,
+      "boiling_point_c": 204.0
+    },
+    {
+      "name": "TMC",
+      "smiles": "CC1OC(=O)OC1C",
+      "DN": 16.5,
+      "AN": 11.0,
+      "LogP": 0.15,
+      "TPSA": 26.3,
+      "MolWt": 116.12,
+      "viscosity_cP": 1.1,
+      "dielectric_constant": 9.0,
+      "boiling_point_c": 238.0
+    },
+    {
+      "name": "Diethylene glycol",
+      "smiles": "OCCOCCO",
+      "DN": 18.5,
+      "AN": 23.5,
+      "LogP": -1.5,
+      "TPSA": 49.7,
+      "MolWt": 106.12,
+      "viscosity_cP": 35.7,
+      "dielectric_constant": 31.7,
+      "boiling_point_c": 245.0
+    },
+    {
+      "name": "2-Methoxyethanol",
+      "smiles": "COCCO",
+      "DN": 20.0,
+      "AN": 27.0,
+      "LogP": -0.77,
+      "TPSA": 29.5,
+      "MolWt": 76.09,
+      "viscosity_cP": 1.62,
+      "dielectric_constant": 16.9,
+      "boiling_point_c": 124.0
+    }
+  ],
+  "modelBenchmarks": {
+    "lifespan": [
+      {
+        "model": "Random Forest",
+        "cv_r2": 0.51,
+        "cv_band": "±0.20",
+        "lopo_r2": 0.477,
+        "p_value": 0.01,
+        "note": "Best generalization for cycle life."
+      },
+      {
+        "model": "Gaussian Process",
+        "cv_r2": 0.43,
+        "cv_band": "±0.24",
+        "lopo_r2": 0.401,
+        "p_value": 0.02,
+        "note": "Smooth small-data baseline."
+      },
+      {
+        "model": "XGBoost",
+        "cv_r2": 0.37,
+        "cv_band": "±0.27",
+        "lopo_r2": 0.312,
+        "p_value": 0.04,
+        "note": "Competitive but less stable than RF."
+      },
+      {
+        "model": "Ridge",
+        "cv_r2": -0.2,
+        "cv_band": "±0.41",
+        "lopo_r2": -0.121,
+        "p_value": 0.19,
+        "note": "Linear baseline underfits the cross-study data."
+      }
+    ],
+    "conductivity": [
+      {
+        "model": "XGBoost",
+        "cv_r2": 0.3,
+        "cv_band": "±0.40",
+        "lopo_r2": 0.453,
+        "p_value": 0.01,
+        "note": "Best for conductivity across papers."
+      },
+      {
+        "model": "Random Forest",
+        "cv_r2": 0.22,
+        "cv_band": "±0.38",
+        "lopo_r2": 0.281,
+        "p_value": 0.04,
+        "note": "Reasonable but less sharp than XGBoost."
+      },
+      {
+        "model": "Gaussian Process",
+        "cv_r2": 0.18,
+        "cv_band": "±0.33",
+        "lopo_r2": 0.194,
+        "p_value": 0.07,
+        "note": "Useful uncertainty-aware comparison model."
+      },
+      {
+        "model": "Ridge",
+        "cv_r2": -0.11,
+        "cv_band": "±0.29",
+        "lopo_r2": -0.053,
+        "p_value": 0.22,
+        "note": "Too rigid for the mixed-literature feature space."
+      }
+    ],
+    "ce": [
+      {
+        "model": "Gaussian Process",
+        "cv_r2": -0.38,
+        "cv_band": "±0.67",
+        "lopo_r2": 0.021,
+        "p_value": 0.33,
+        "note": "CE reporting was too inconsistent to generalize."
+      },
+      {
+        "model": "Random Forest",
+        "cv_r2": -0.41,
+        "cv_band": "±0.52",
+        "lopo_r2": -0.044,
+        "p_value": 0.29,
+        "note": "No stable cross-study signal."
+      }
+    ],
+    "esw": [
+      {
+        "model": "Random Forest",
+        "cv_r2": -0.29,
+        "cv_band": "±0.42",
+        "lopo_r2": -0.456,
+        "p_value": 0.13,
+        "note": "Electrochemical stability windows were too unevenly reported."
+      },
+      {
+        "model": "Gaussian Process",
+        "cv_r2": -0.33,
+        "cv_band": "±0.47",
+        "lopo_r2": -0.381,
+        "p_value": 0.18,
+        "note": "Still below the mean-baseline despite flexible kernels."
+      }
+    ]
+  },
+  "shapSummary": {
+    "lifespan": [
+      {
+        "feature": "co_solvent_fraction",
+        "importance": 0.34
+      },
+      {
+        "feature": "salt_molality",
+        "importance": 0.18
+      },
+      {
+        "feature": "DN_x_fraction",
+        "importance": 0.16
+      },
+      {
+        "feature": "MolWt",
+        "importance": 0.09
+      },
+      {
+        "feature": "viscosity_cP",
+        "importance": 0.08
+      },
+      {
+        "feature": "boiling_point_c",
+        "importance": 0.07
+      },
+      {
+        "feature": "dielectric_x_salt",
+        "importance": 0.05
+      }
+    ],
+    "conductivity": [
+      {
+        "feature": "co_solvent_fraction",
+        "importance": 0.3
+      },
+      {
+        "feature": "salt_molality",
+        "importance": 0.21
+      },
+      {
+        "feature": "DN_x_fraction",
+        "importance": 0.15
+      },
+      {
+        "feature": "boiling_point_c",
+        "importance": 0.1
+      },
+      {
+        "feature": "dielectric_constant",
+        "importance": 0.09
+      },
+      {
+        "feature": "viscosity_cP",
+        "importance": 0.07
+      },
+      {
+        "feature": "LogP_x_dielectric",
+        "importance": 0.05
+      }
+    ]
+  },
+  "paretoCandidates": [
+    {
+      "name": "DMSO",
+      "predicted_lifespan_h": 2450,
+      "predicted_conductivity_mS_cm": 31.2,
+      "bp_c": 189,
+      "dn": 29.8,
+      "in_dataset": true,
+      "status": "internal check",
+      "note": "Strong donor and repeatedly favorable across the curated set."
+    },
+    {
+      "name": "DMF",
+      "predicted_lifespan_h": 2140,
+      "predicted_conductivity_mS_cm": 34.8,
+      "bp_c": 153,
+      "dn": 26.6,
+      "in_dataset": true,
+      "status": "low-viscosity analogue",
+      "note": "Maintains conductivity better than heavier glycol-rich systems."
+    },
+    {
+      "name": "TEP",
+      "predicted_lifespan_h": 2250,
+      "predicted_conductivity_mS_cm": 24.9,
+      "bp_c": 215,
+      "dn": 24.5,
+      "in_dataset": true,
+      "status": "safety-leaning pick",
+      "note": "High boiling point and repeated Pareto presence support follow-up testing."
+    },
+    {
+      "name": "NMP",
+      "predicted_lifespan_h": 2030,
+      "predicted_conductivity_mS_cm": 28.6,
+      "bp_c": 202,
+      "dn": 27.3,
+      "in_dataset": false,
+      "status": "extrapolative",
+      "note": "Interesting chemical neighborhood match, but still outside the training manifold."
+    },
+    {
+      "name": "Sulfolane",
+      "predicted_lifespan_h": 1720,
+      "predicted_conductivity_mS_cm": 15.4,
+      "bp_c": 285,
+      "dn": 14.8,
+      "in_dataset": true,
+      "status": "viscosity-limited",
+      "note": "Excellent thermal safety, but mobility penalties remain visible."
+    },
+    {
+      "name": "Ethylene glycol",
+      "predicted_lifespan_h": 1560,
+      "predicted_conductivity_mS_cm": 10.2,
+      "bp_c": 197,
+      "dn": 19.0,
+      "in_dataset": true,
+      "status": "common literature anchor",
+      "note": "Frequent in the dataset and useful as a benchmark co-solvent."
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Start with DMSO as the internal check",
+      "body": "It is already present in the curated literature and lands inside the favorable Pareto region with strong donor character."
+    },
+    {
+      "title": "Use DMF when conductivity needs to stay high",
+      "body": "Its lower viscosity preserves transport better than many heavier donor-rich solvents."
+    },
+    {
+      "title": "Carry TEP when safety and boiling point matter",
+      "body": "TEP trades some conductivity for a safer thermal profile and still remains competitively ranked."
+    },
+    {
+      "title": "Treat NMP as a hypothesis, not a result",
+      "body": "NMP sits in an attractive descriptor neighborhood but remains extrapolative relative to the training corpus."
+    }
+  ],
+  "references": [
+    {
+      "key": "[1]",
+      "text": "[1] B. Dunn, H. Kamath, and J.-M. Tarascon, \"Electrical energy storage for the grid: A battery of choices,\" Science, 2011."
+    },
+    {
+      "key": "[2]",
+      "text": "[2] D. Larcher and J.-M. Tarascon, \"Towards greener and more sustainable batteries for electrical energy storage,\" Nat. Chem., 2015."
+    },
+    {
+      "key": "[3]",
+      "text": "[3] G. Fang, J. Zhou, A. Pan, and S. Liang, \"Recent advances in aqueous zinc-ion batteries,\" ACS Energy Lett., 2018."
+    },
+    {
+      "key": "[4]",
+      "text": "[4] X. Jia, C. Liu, Z. G. Neale, J. Yang, and G. Cao, \"Active materials for aqueous zinc ion batteries,\" Chem. Rev., 2020."
+    },
+    {
+      "key": "[5]",
+      "text": "[5] F. Wang et al., \"Highly reversible zinc metal anode for aqueous batteries,\" Nat. Mater., 2018."
+    },
+    {
+      "key": "[6]",
+      "text": "[6] Q. Zhang, J. Luan, Y. Tang, X. Ji, and H. Wang, \"Interfacial design of dendrite-free zinc anodes for aqueous zinc-ion batteries,\" Angew. Chem. Int. Ed., 2020."
+    },
+    {
+      "key": "[7]",
+      "text": "[7] W. Yang et al., \"Hydrated eutectic electrolytes with ligand-oriented solvation shells for long-cycling zinc-organic batteries,\" Joule, 2020."
+    },
+    {
+      "key": "[8]",
+      "text": "[8] L. Suo et al., \"'Water-in-salt' electrolyte enables high-voltage aqueous lithium-ion chemistries,\" Science, 2015."
+    },
+    {
+      "key": "[9]",
+      "text": "[9] J. Xie, Z. Liang, and Y.-C. Lu, \"Molecular crowding electrolytes for high-voltage aqueous batteries,\" Nat. Mater., 2020."
+    },
+    {
+      "key": "[10]",
+      "text": "[10] X. Song, L. Bai, L. Wang, D. Zeng, and J. Liu, \"Enhanced reversibility and electrochemical window of Zn-ion batteries with an acetonitrile/water-in-salt electrolyte,\" Chem. Commun., 2021."
+    },
+    {
+      "key": "[11]",
+      "text": "[11] L. Cao et al., \"Fluorinated interphase enables reversible aqueous zinc battery chemistries,\" Nat. Nanotechnol., 2021."
+    },
+    {
+      "key": "[12]",
+      "text": "[12] W. Sun et al., \"A rechargeable zinc-air battery based on zinc peroxide chemistry,\" Science, 2021."
+    },
+    {
+      "key": "[13]",
+      "text": "[13] S. Liu et al., \"Tuning the electrolyte solvation structure to suppress cathode dissolution, water reactivity, and Zn dendrite growth in zinc-ion batteries,\" Adv. Funct. Mater., 2021."
+    },
+    {
+      "key": "[14]",
+      "text": "[14] Y. Luo, X. Chen, H. Zhang, L. Wang, and J. Li, \"Machine learning-guided screening of electrolyte additives for dendrite-free zinc anodes,\" ACS Nano, 2025."
+    },
+    {
+      "key": "[15]",
+      "text": "[15] J. Zhang, \"Research on image representation learning method based on self-supervised learning,\" Int. Sci. Tech. Econ. Res., 2026."
+    },
+    {
+      "key": "[16]",
+      "text": "[16] Y. Qin, \"Research on long sequence learning behavior modeling based on Transformer-XL,\" Int. Sci. Tech. Econ. Res., 2026."
+    },
+    {
+      "key": "[17]",
+      "text": "[17] X. Zeng, \"Cross-border trade fraud detection via integrated heterogeneous graph neural network and XGBoost,\" Int. Sci. Tech. Econ. Res., 2026."
+    },
+    {
+      "key": "[18]",
+      "text": "[18] G. Landrum, \"RDKit: Open-source cheminformatics,\" [Online]. Accessed Apr. 2026."
+    },
+    {
+      "key": "[19]",
+      "text": "[19] C. Reichardt and T. Welton, Solvents and Solvent Effects in Organic Chemistry, 4th ed., Wiley-VCH, 2011."
+    },
+    {
+      "key": "[20]",
+      "text": "[20] T. Chen and C. Guestrin, \"XGBoost: A scalable tree boosting system,\" KDD, 2016."
+    },
+    {
+      "key": "[21]",
+      "text": "[21] L. Breiman, \"Random forests,\" Mach. Learn., 2001."
+    },
+    {
+      "key": "[22]",
+      "text": "[22] S. M. Lundberg and S.-I. Lee, \"A unified approach to interpreting model predictions,\" NeurIPS 2017."
+    },
+    {
+      "key": "[23]",
+      "text": "[23] K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, \"A fast and elitist multiobjective genetic algorithm: NSGA-II,\" IEEE Trans. Evol. Comput., 2002."
+    },
+    {
+      "key": "[24]",
+      "text": "[24] C. Feng, \"Personalized recommendation algorithm of piano practice scheme based on multiobjective optimization,\" Int. Sci. Tech. Econ. Res., 2026."
+    },
+    {
+      "key": "[25]",
+      "text": "[25] Y. Ding and G. Chen, \"Joint prediction model of reservoir parameters based on multimodal transformer graph neural operator physical constraint network,\" Int. Sci. Tech. Econ. Res., 2026."
+    }
+  ]
+}
