@@ -48,3 +48,32 @@ body {
   box-shadow: 0 14px 42px rgba(29, 36, 48, 0.08);
   backdrop-filter: blur(16px);
 }
+.section-anchor {
+  scroll-margin-top: 6rem;
+}
+
+.ink-rule {
+  position: relative;
+}
+
+.ink-rule::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  border: 1px solid rgba(29, 36, 48, 0.05);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid rgba(109, 116, 131, 0.18);
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
