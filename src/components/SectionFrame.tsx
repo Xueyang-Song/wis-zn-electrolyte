@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { motion } from 'framer-motion';
 
 type Props = {
   id: string;
@@ -11,7 +12,14 @@ type Props = {
 
 export function SectionFrame({ id, index, eyebrow, title, body, children }: Props) {
   return (
-    <section id={id} className="section-anchor mx-auto max-w-6xl px-5 py-12 md:px-10">
+    <motion.section
+      id={id}
+      className="section-anchor mx-auto max-w-6xl px-5 py-12 md:px-10"
+      initial={{ opacity: 0.32, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.55, ease: 'easeOut' }}
+    >
       <div className="grid gap-8 lg:grid-cols-[0.28fr_0.72fr]">
         <div>
           <p className="display-face text-6xl text-copper/25">{index}</p>
@@ -21,6 +29,6 @@ export function SectionFrame({ id, index, eyebrow, title, body, children }: Prop
         </div>
         <div className="rounded-[2rem] border border-line/70 bg-white/80 p-6 shadow-card ink-rule md:p-8">{children}</div>
       </div>
-    </section>
+    </motion.section>
   );
 }
