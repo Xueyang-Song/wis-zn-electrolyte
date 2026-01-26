@@ -6,6 +6,7 @@ import { SectionFrame } from './components/SectionFrame';
 import { DatasetExplorer } from './components/DatasetExplorer';
 import { ModelBenchmark } from './components/ModelBenchmark';
 import { ShapRules } from './components/ShapRules';
+import { ParetoExplorer } from './components/ParetoExplorer';
 import { ReferenceDrawer } from './components/ReferenceDrawer';
 import { useActiveSection } from './hooks/useActiveSection';
 
@@ -15,6 +16,7 @@ const sections = [
   { id: 'methods', label: 'Method' },
   { id: 'models', label: 'Models' },
   { id: 'shap', label: 'Design rules' },
+  { id: 'pareto', label: 'Pareto' },
   { id: 'recommendations', label: 'Recommendations' },
   { id: 'references', label: 'References' },
 ];
@@ -174,8 +176,17 @@ export default function App() {
           <ShapRules shapSummary={siteData.shapSummary} />
         </SectionFrame>
 <SectionFrame
+  id="pareto"
+  index="06"
+  eyebrow="Pareto candidate explorer"
+  title="Pragmatic candidate solvent ranking"
+  body="The paper restricted multi-objective optimization to lifespan and conductivity because CE and ESW were not predictive. The site keeps that same honest boundary."
+>
+  <ParetoExplorer paretoCandidates={siteData.paretoCandidates} />
+</SectionFrame>
+<SectionFrame
           id="recommendations"
-          index="05"
+          index="07"
           eyebrow="Practical solvent recommendations"
           title="The site ends where the next experiments should begin"
           body="The goal is not to oversell prediction. It is to narrow the solvent search space to the combinations most worth validating under a common protocol."
@@ -193,7 +204,7 @@ export default function App() {
 
         <SectionFrame
           id="references"
-          index="06"
+          index="08"
           eyebrow="References and paper download"
           title="The manuscript, bibliography, and source confidence stay in the same reading flow"
           body="The website is meant to feel self-contained: key references stay readable in-page, while the full PDF remains one click away."
